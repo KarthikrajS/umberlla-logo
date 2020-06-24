@@ -70,7 +70,7 @@ class App extends React.Component {
                 </span >
                 }
                 {!loading &&
-                <span className="dataBock">
+                <span className="dataBlock">
                         <h2>Custom Umbrella</h2>
                          <Icon onClick={() => this.selectColor('blue')}>
                           <img src={require('./Components/icons/blue.png')}></img>
