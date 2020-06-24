@@ -49,27 +49,13 @@ class App extends React.Component {
         this.setState({loading:false})
     }
 
-        renderImage(color,upload){
-
-        let renderHtml=[];
-
-        renderHtml.push(
-            <span> <img src={require('./Components/icons/YelloUmbrella.png')} className="umberlla-logo" alt="logo"/>
-                 if (upload !== "")
-            <img src={require('./Components/icons/upload_icon.svg')} className="renderImage"/>
-            </span>
-        )
-
-    }
-
-
     render() {
         const{color,image,loading} = this.state;
 
         let bg = (color === 'yellow')  ? "#ffffcc":((color === 'blue') ? "#62b2ff": "#ff99cc" )
             return (
             <div className="App">
-                <body className="App-header" style={{"background-color": bg}}>
+                <body className="App-Body" style={{"background-color": bg}}>
                 {loading && <span> <img src={require('./Components/icons/loader_icon.svg')} className="loaderImage"/> </span>}
                 {!loading && <span>
                     {(color === 'yellow') &&
@@ -84,7 +70,7 @@ class App extends React.Component {
                 </span >
                 }
                 {!loading &&
-                <span style={{"marginLeft": "4%","color":"black"}}>
+                <span className="dataBock">
                         <h2>Custom Umbrella</h2>
                          <Icon onClick={() => this.selectColor('blue')}>
                           <img src={require('./Components/icons/blue.png')}></img>

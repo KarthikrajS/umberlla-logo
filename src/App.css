@@ -18,6 +18,10 @@
     top: 60%;
     right: 57%;
 }
+.dataBlock{
+    margin-left: 4%;
+    color:black
+}
 @media (prefers-reduced-motion: no-preference) {
     .loaderImage {
         animation: App-logo-spin infinite 3s linear;
@@ -26,7 +30,7 @@
         animation: App-logo-spin  2s linear;
     }
 }
-.App-header {
+.App-Body {
 
     min-height: 100vh;
     display: flex;
