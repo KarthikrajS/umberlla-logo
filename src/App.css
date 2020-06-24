@@ -1,0 +1,52 @@
+.App {
+    text-align: center;
+}
+
+.umberlla-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+.upload-logo{
+    width: 15px;
+    length: 15px;
+}
+.renderImage{
+    width: 100px;
+    height:15px;
+    z-index: 1;
+    position: absolute;
+    top: 60%;
+    right: 57%;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .loaderImage {
+        animation: App-logo-spin infinite 3s linear;
+    }
+    .umberlla-logo {
+        animation: App-logo-spin  2s linear;
+    }
+}
+.App-header {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
